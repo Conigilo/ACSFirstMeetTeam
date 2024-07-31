@@ -13,14 +13,9 @@
             scanf("%f",&x);
             printf("Enter the height: ",y);
             scanf("%f",&y);
-            if (x==0 || y==0)
+            if (x<0 || y<0)
             {
                 printf("The area of the rectangle is: Error");
-            }
-            else if (x<0 || y<0)
-            {
-                printf("The area of the rectangle is: %.2f",x*y);
-
             }
             else 
             {
@@ -33,7 +28,7 @@
             scanf("%f",&x);
             printf("Enter the height: ",y);
             scanf("%f",&y);
-            if (x=0||y=0)
+            if (x<0||y<0)
             {
                 printf("The area of the triangle is: Error");
             }
@@ -47,7 +42,7 @@
         {
             printf("Enter the radius: ",x);
             scanf("%f",&x);
-            if (x=0)
+            if (x<0)
             {
                 printf("The area of the circle is: Error");
             }
@@ -61,4 +56,5 @@
         {
             printf("Invalid choice");
         }
+        
     }
